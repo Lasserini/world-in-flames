@@ -37,6 +37,7 @@ header {
     font-size: 50px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    margin: 5px auto;
 }
 
 header img {
