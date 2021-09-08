@@ -117,8 +117,15 @@ header img {
 /* Rules & Info box styling */
 #rules_content {
     display: none;
+    float: left;
+    max-width: 50%;
 }
 
+#info_content {
+    display: none;
+    float: right;
+    max-width: 50%;
+}
 
 /* footer styling */
 footer {
