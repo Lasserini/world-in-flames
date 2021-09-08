@@ -95,7 +95,9 @@ header img {
 }
 
 #buttons button:hover {
-    color: 
+    background-color: rgb(19, 177, 58);
+    color: #df0d0d;
+    border-color: #000000;
 }
 
 #rules {
