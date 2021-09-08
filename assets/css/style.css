@@ -55,11 +55,59 @@ header img {
 
 /* Content Wrap Styling */
 #wrap {
+    max-width: 60vw;
     text-align: center;
+    margin: 0 auto;
 }
 
 /* Hero Image & stages of Hangman globe evolution Styling */
 #globe {
-    max-width: 40%;
-    margin: 10px auto;
+    max-width: 40vw;
+    margin: 0 auto;
+}
+
+/* Intro box styling */
+#intro {
+    border: 5px solid rgba(240, 159, 9, 0.541);
+    border-radius: 25px;
+}
+
+#intro h2 {
+    font-size: 24px;
+    color: #df0d0d;
+    margin: 5px auto;
+}
+
+#intro p {
+    margin: 0 20%;
+}
+
+#buttons {
+    margin: 10px 20px;
+}
+
+#buttons button {
+    color: rgb(19, 177, 58);
+    background-color: #000000;
+    border: 2px solid #df0d0d;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+#buttons button:hover {
+    color: 
+}
+
+#rules {
+    float: left;
+    font-size: 18px;
+}
+
+#info {
+    float: right;
+    font-size: 18px;
+}
+
+#start_game {
+    font-size: 22px;
 }
