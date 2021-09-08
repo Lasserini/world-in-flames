@@ -113,3 +113,10 @@ header img {
 #start_game {
     font-size: 22px;
 }
+
+/* footer styling */
+footer {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
