@@ -26,7 +26,7 @@
         <img id="globe" src="assets/images/hero_image.jpg" alt="hero image of two human hands holding a flaming globe">
         
         <!-- Introductory flavour text-->
-        <div id="intro">
+        <section id="intro">
             <h2>A Timely Hero</h2>
             <p>For centuries the human race had tormented their beloved planet earth.
                 By the year 2000 the earths climate began to change,
@@ -47,16 +47,22 @@
             <div id="buttons">
                 <button onclick="toggleRules()" id="rules">Rules</button>
                 <button id="start_game" aria-label="button that starts the game">Save Humanity!</button>
-                <button onclick="toggleInfo()" id="info">Info</button>
+                <button onclick="toggleAbout()" id="about">About</button>
             </div>
-        </div>
+        </section>
         <div id="popup_wrap">
-            <div id="rules_content">
-                 Blah blah
-            </div>
-            <div id="info_content">
-                Some other text
-            </div>
+            <section id="rules_content">
+                - The dotted line conceals a word.<br>
+                - To win the game you must guess that word.<br>
+                - You have a limited number of wrong guesses.</br>
+                - Click the letters to start guessing.
+            </section>
+            <section id="about_content">
+                - The hidden words relate to climate change.<br>
+                - They focus on steps you could take today.<br>
+                - For more good ideas, consider trying this;<br>
+                -> <a href="https://deedster.com/carbon-footprint-calculator/" target="_blank">Carbon Footprint Calculator</a>
+            </section>
         </div>
     </div>
 

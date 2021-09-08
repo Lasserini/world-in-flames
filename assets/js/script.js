@@ -9,8 +9,8 @@ function toggleRules(){
     }
 }
 
-function toggleInfo(){
-    let status = document.getElementById("info_content");
+function toggleAbout(){
+    let status = document.getElementById("about_content");
     if (status.style.display === "inline-block") {
         status.style.display = "none";
     } else {

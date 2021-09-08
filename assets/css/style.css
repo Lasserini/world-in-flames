@@ -105,7 +105,7 @@ header img {
     font-size: 18px;
 }
 
-#info {
+#about {
     float: right;
     font-size: 18px;
 }
@@ -114,25 +114,36 @@ header img {
     font-size: 22px;
 }
 
-/* Rules & Info box styling */
+/* Rules & About box styling */
 #rules_content {
     display: none;
     float: left;
-    max-width: 50%;
-    margin: 5px;
-    border: 2px solid #ffffff;
-    background-color: slategray;
+    max-width: 35%;
+    margin-left: 25px;
+    border: 2.5px solid rgba(240, 159, 9, 0.541);
+    padding: 5px;
+    text-align: left;
+    line-height: 150%;
 }
 
-#info_content {
+#about_content {
     display: none;
     float: right;
-    max-width: 50%;
+    max-width: 35%;
+    margin-right: 25px;
+    border: 2.5px solid rgba(240, 159, 9, 0.541);
+    padding: 2.5px;
+    text-align: left;
+    line-height: 150%;
+}
+
+#about_content a {
+    text-align: center;
 }
 
 /* footer styling */
 footer {
-    text-align: right;
-    margin-top: 20px;
+    text-align: center;
+    margin-top: 30px;
     margin-right: 10px;
 }
