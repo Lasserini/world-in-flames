@@ -89,8 +89,8 @@ header img {
 #buttons button {
     color: rgb(19, 177, 58);
     background-color: #000000;
-    border: 2px solid #df0d0d;
-    border-radius: 5px;
+    border: 2.5px solid #df0d0d;
+    border-radius: 10px;
     padding: 2px 5px;
 }
 
@@ -119,6 +119,9 @@ header img {
     display: none;
     float: left;
     max-width: 50%;
+    margin: 5px;
+    border: 2px solid #ffffff;
+    background-color: slategray;
 }
 
 #info_content {

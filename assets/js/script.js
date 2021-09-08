@@ -1,21 +1,19 @@
-/*  Functions to display/hide the Rules & Info content boxes.
-    Inspiration drawn from https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
-*/
+//  Functions to display/hide the Rules & Info content boxes.
 
 function toggleRules(){
     let status = document.getElementById("rules_content");
-    if (status.style.display === "none") {
-        status.style.display = "inline-block";
-    } else {
+    if (status.style.display === "inline-block") {
         status.style.display = "none";
+    } else {
+        status.style.display = "inline-block";
     }
 }
 
 function toggleInfo(){
     let status = document.getElementById("info_content");
-    if (status.style.display === "none") {
-        status.style.display = "inline-block";
-    } else {
+    if (status.style.display === "inline-block") {
         status.style.display = "none";
+    } else {
+        status.style.display = "inline-block";
     }
 }
