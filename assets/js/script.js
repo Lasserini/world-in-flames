@@ -1,5 +1,4 @@
-//  Functions to display/hide the Rules & Info content boxes.
-
+// Functions to display/hide the Rules & Info content boxes.
 function toggleRules(){
     let status = document.getElementById("rules_content");
     if (status.style.display === "inline-block") {
@@ -17,3 +16,23 @@ function toggleAbout(){
         status.style.display = "inline-block";
     }
 }
+
+// An array with possible hidden words
+let hidden_words = [
+    "Consumerism",
+    "Shopping",
+    "Waste",
+    "Meateater",
+    "Veganism",
+    "Vegetarian",
+    "Cows",
+    "Transportation",
+    "Commute",
+    "Automobile",
+    "Diesel",
+    "Petrol",
+    "Holidays",
+    "Airplanes",
+    "Heating",
+    "Electricity"
+]
