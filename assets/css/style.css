@@ -114,6 +114,12 @@ header img {
     font-size: 22px;
 }
 
+/* Rules & Info box styling */
+#rules_content {
+    display: none;
+}
+
+
 /* footer styling */
 footer {
     text-align: right;
