@@ -72,7 +72,7 @@ header img {
     border-radius: 25px;
 }
 
-#intro h2 {
+#intro h2, #game_area h2 {
     font-size: 24px;
     color: #df0d0d;
     margin: 5px auto;
@@ -82,19 +82,20 @@ header img {
     margin: 0 20%;
 }
 
-#buttons {
+.buttons {
     margin: 10px 20px;
 }
 
-#buttons button {
+.buttons button {
     color: rgb(19, 177, 58);
     background-color: #000000;
     border: 2.5px solid #df0d0d;
     border-radius: 10px;
     padding: 2px 5px;
+    font-size: 18px;
 }
 
-#buttons button:hover {
+.buttons button:hover {
     background-color: rgb(19, 177, 58);
     color: #df0d0d;
     border-color: #000000;
@@ -102,12 +103,10 @@ header img {
 
 #rules {
     float: left;
-    font-size: 18px;
 }
 
 #about {
     float: right;
-    font-size: 18px;
 }
 
 #start_game {
@@ -157,3 +156,9 @@ header img {
 #game_area {
     display: none;
 }
+
+#game_area hr {
+    height: 2.5px;
+    background-color: rgba(240, 159, 9, 0.541);
+}
+

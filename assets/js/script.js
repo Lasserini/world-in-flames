@@ -52,3 +52,8 @@ function startGame(){
     let addGameArea = document.getElementById("game_area");
     addGameArea.style.display = "block";
 }
+
+// Function to reset the page
+function resetPage(){
+    history.go()
+}

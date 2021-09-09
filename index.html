@@ -45,7 +45,7 @@
                 Failure is not an option!
             </p>
             <!-- Buttons to display rules, information about the game & the button that starts the game -->
-            <div id="buttons">
+            <div class="buttons">
                 <button onclick="toggleRules()" id="rules">Rules</button>
                 <button onclick="startGame()" id="start_game" aria-label="button that starts the game">Save Humanity!</button>
                 <button onclick="toggleAbout()" id="about">About</button>
@@ -73,13 +73,17 @@
             Disaster strikes in <span id="remaining_guesses">6</span> wrong guesses!
         </div>
         <div id="game_area">
-            <section id="secret_word">
-                Content
-            </section>
-            <section id="letters">
-                & more content
-            </section>
-
+            <h2>Guess the hidden word before it's too late!</h2>
+            <span id="secret_word"></span>
+            <hr>
+            <span id="letters">
+                A keyboard created with JS
+            </span>
+            <hr>
+            <div class="buttons">
+                <button onclick="startGame()" id="play_again" aria-label="button that restarts the game">Play Again</button>
+                <button onclick="resetPage()" id="reset" aria-label="button that resets the page">Back</button>
+            </div>
         </div>
     </div>
 
