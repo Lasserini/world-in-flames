@@ -74,11 +74,11 @@
         </div>
         <div id="game_area">
             <h2>Guess the hidden word before it's too late!</h2>
-            <span id="secret_word"></span>
+            <div id="secret_word"></div>
             <hr>
-            <span id="letters">
-                A keyboard created with JS
-            </span>
+            <div id="letters">
+                <button onclick="checkGuess()">A</button>
+            </div>
             <hr>
             <div class="buttons">
                 <button onclick="startGame()" id="play_again" aria-label="button that restarts the game">Play Again</button>

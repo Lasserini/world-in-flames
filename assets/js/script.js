@@ -17,6 +17,9 @@ function toggleAbout(){
     }
 }
 
+// Changes cursor to another look
+document.body.style.cursor = "pointer";
+
 // An array with possible hidden words
 let hidden_words = [
     "Consumerism",
@@ -40,21 +43,22 @@ let hidden_words = [
 
 // Function to select the secret word to guess
 function selectSecretWord(){
-    let secretWord;
-    secretWord = hidden_words[Math.floor(Math.random() * hidden_words.length)];
-    alert(secretWord);
+    let secretWord = hidden_words[Math.floor(Math.random() * hidden_words.length)];
+    secretWord = secretWord.split("").map(letter => " _ ").join("");
+    document.getElementById("secret_word").innerHTML = secretWord;
 }
 
-// Function that transforms screen from Welcome Page & into GameState mode
+// Function that transforms screen from Welcome Page & starts GameState mode
 function startGame(){
     document.getElementById("globe").src ="assets/images/stage1.jpg";
     let removeIntro = document.getElementById("intro");
-    removeIntro.style.display = "none";
+        removeIntro.style.display = "none";
     let addGuessCounter = document.getElementById("wrong_guesses");
-    addGuessCounter.style.display = "block";
+        addGuessCounter.style.display = "block";
     let addGameArea = document.getElementById("game_area");
-    addGameArea.style.display = "block";
-    document.body.style.cursor = "pointer";
+        addGameArea.style.display = "block";
+    
+    selectSecretWord()
 }
 
 
