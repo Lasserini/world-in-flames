@@ -44,5 +44,7 @@ let hidden_words = [
 
 // Function that transforms screen from Welcome Page & into GameState mode
 function startGame(){
-    
+    let status = document.getElementById("intro");
+    status.style.display = "none";
+    document.getElementById("globe").src ="assets/images/stage1.jpg";
 }

@@ -62,7 +62,7 @@ header img {
 
 /* Hero Image & stages of Hangman globe evolution Styling */
 #globe {
-    max-width: 40vw;
+    max-height: 40vh;
     margin: 0 auto;
 }
 

@@ -25,7 +25,7 @@
         <!-- The hero image, evolves as the game progress-->
         <img id="globe" src="assets/images/hero_image.jpg" alt="hero image of two human hands holding a flaming globe">
         
-        <!-- Introductory flavour text-->
+        <!-- Introductory flavour text -->
         <section id="intro">
             <h2>A Timely Hero</h2>
             <p>For centuries the human race had tormented their beloved planet earth.
@@ -44,12 +44,14 @@
                 <br><br>
                 Failure is not an option!
             </p>
+            <!-- Buttons to display rules, information about the game & the button that starts the game -->
             <div id="buttons">
                 <button onclick="toggleRules()" id="rules">Rules</button>
                 <button onclick="startGame()" id="start_game" aria-label="button that starts the game">Save Humanity!</button>
                 <button onclick="toggleAbout()" id="about">About</button>
             </div>
         </section>
+        <!-- Content boxes that expand and collapse using the buttons above -->
         <div id="popup_wrap">
             <section id="rules_content">
                 - The dotted line conceals a word.<br>
@@ -61,14 +63,11 @@
                 - The hidden words relate to climate change.<br>
                 - They focus on steps you could take today.<br>
                 - For more inspiration, consider trying this;<br>
-                > <a href="https://deedster.com/carbon-footprint-calculator/" target="_blank">Carbon Footprint Calculator</a>
+                > <a href="https://deedster.com/carbon-footprint-calculator/" target="_blank">Carbon Footprint Calculator</a><br>
+                - Site design by <a href="https://github.com/Lasserini?tab=repositories/" target="_blank">©Lasse Poulsen</a>
             </section>
         </div>
     </div>
-
-    <footer>
-        Site design by ©2021 Lasse Poulsen
-    </footer>
 
     <script src="assets/js/script.js"></script>
 </body>
