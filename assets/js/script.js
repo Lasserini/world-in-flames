@@ -44,7 +44,11 @@ let hidden_words = [
 
 // Function that transforms screen from Welcome Page & into GameState mode
 function startGame(){
-    let status = document.getElementById("intro");
-    status.style.display = "none";
     document.getElementById("globe").src ="assets/images/stage1.jpg";
+    let removeIntro = document.getElementById("intro");
+    removeIntro.style.display = "none";
+    let addGuessCounter = document.getElementById("wrong_guesses");
+    addGuessCounter.style.display = "block";
+    let addGameArea = document.getElementById("game_area");
+    addGameArea.style.display = "block";
 }

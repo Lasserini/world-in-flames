@@ -91,7 +91,7 @@ The website targets people who want to be a part of changing the climate crisis 
 
 ### 2.2 Futures left to implement 
 - The factual information could be clearer (and have more numbers).
-- Add a thermometer next to the evolving globe during the GameState, allowing the user to see the worlds temperature rise, and also to provide an easy way to see how many guesses you have left before failing.
+- Add a visual element with a thermometer to replace the Disaster Strikes in x wrong guesses counter.
 - Consider if FontAwesome icons would improve the Rules & About boxes.
 
 ## 3. Technologies Used
