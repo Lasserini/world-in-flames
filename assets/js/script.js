@@ -22,25 +22,28 @@ let hidden_words = [
     "Consumerism",
     "Shopping",
     "Waste",
-
     "Meateater",
     "Veganism",
     "Vegetarian",
     "Cows",
-
     "Transportation",
     "Commute",
     "Automobile",
     "Diesel",
     "Petrol",
-
     "Holidays",
     "Airplanes",
     "Flying",
-
     "Heating",
     "Electricity"
 ]
+
+// Function to select the secret word to guess
+function selectSecretWord(){
+    let secretWord;
+    secretWord = hidden_words[Math.floor(Math.random() * hidden_words.length)];
+    alert(secretWord);
+}
 
 // Function that transforms screen from Welcome Page & into GameState mode
 function startGame(){
@@ -51,7 +54,10 @@ function startGame(){
     addGuessCounter.style.display = "block";
     let addGameArea = document.getElementById("game_area");
     addGameArea.style.display = "block";
+    document.body.style.cursor = "pointer";
 }
+
+
 
 // Function to reset the page
 function resetPage(){
