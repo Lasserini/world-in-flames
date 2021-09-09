@@ -22,17 +22,22 @@ let hidden_words = [
     "Consumerism",
     "Shopping",
     "Waste",
+
     "Meateater",
     "Veganism",
     "Vegetarian",
     "Cows",
+
     "Transportation",
     "Commute",
     "Automobile",
     "Diesel",
     "Petrol",
+
     "Holidays",
     "Airplanes",
+    "Flying",
+    
     "Heating",
     "Electricity"
 ]

@@ -138,7 +138,12 @@ header img {
 }
 
 #about_content a {
-    text-align: center;
+    text-decoration: none;
+    color: rgb(44, 103, 192);
+}
+
+#about_content a:hover {
+    color: rgb(9, 237, 245);
 }
 
 /* footer styling */
