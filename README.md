@@ -111,8 +111,8 @@ The website targets people who want to be a part of changing the climate crisis 
     - GitHub is used to store the projects code after being pushed from Git. And to host the project.
 1. [Pixabay:](https://pixabay.com/)
     - Used as a source for free to use images.
-1. [Image Resizer:](https://imageresizer.com/)
-    - Image Resizer was used to resizing images and edit profile photos for the website.
+1. [PicResizer:](https://picresize.com/)
+    - PicResizer was used to resizing images and edit profile photos for the website.
 1. [Balsamic:](https://balsamiq.com/)
     - Balsamiq was used during the design process to create Wireframes.
 1. [Lighthouse from Chrome Developer Tools:](https://developers.google.com/web/tools/lighthouse)

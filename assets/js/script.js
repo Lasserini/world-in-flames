@@ -37,7 +37,12 @@ let hidden_words = [
     "Holidays",
     "Airplanes",
     "Flying",
-    
+
     "Heating",
     "Electricity"
 ]
+
+// Function that transforms screen from Welcome Page & into GameState mode
+function startGame(){
+    
+}
