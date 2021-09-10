@@ -41,8 +41,9 @@ let hidden_words = [
 ]
 
 // Variables used accoss multiple functions
-let secretWord = [];
+let secretWord;
 let secretWordState;
+let usedLetters = [];
 
 // Function that alters the conclusion depending on word chosen
 function setConclusion(){
@@ -75,7 +76,7 @@ function selectSecretWord(){
 
 // Function to display the secret word in a hidden way, and also to update it during the game
 function hiddenWord(){
-    secretWordState = secretWord.split("").map(letter => " _ ").join("");
+    secretWordState = secretWord.split("").map(letter => (usedLetters.indexOf(letter) >=0 ? letter : " _ ")).join("");
     document.getElementById("secret_word").innerHTML = secretWordState;
 }
 
@@ -124,6 +125,7 @@ function wonGame(){
 
 // Functions to handle corret & incorrest guesses
 function correctGuess(){
+    hiddenWord()
     if (secretWordState === secretWord){
         wonGame()
     }
@@ -164,12 +166,14 @@ function incorrectGuess(){
 }
 
 function checkGuess(letter){
+    usedLetters.push(letter);
+    document.getElementById(letter).disabled = true;
+   
     if (secretWord.indexOf(letter) >= 0){
         correctGuess();
     } else {
         incorrectGuess();
     }
-    document.getElementById(letter).disabled = true;
 }
 
 // Functions that resets the GameState page when Play Again button is pressed.
@@ -181,6 +185,7 @@ function reStartGame(){
     document.getElementById("game_area_heading").innerHTML = "Good luck - You can do it!";
     document.getElementById("letters").style.display = "block";
     document.getElementById("conclusion").style.display = "none";
+    usedLetters = [];
     letterButtons()
     selectSecretWord();
 }
