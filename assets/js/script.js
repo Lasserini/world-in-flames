@@ -40,12 +40,34 @@ let hidden_words = [
 
 // Variables used accoss multiple functions
 let secretWord = [];
-let secretWord2;
+
+// Function that alters the conclusion depending on word chosen
+function setConclusion(){
+    if (secretWord == "CONSUMERISM" || secretWord == "SHOPPING" || secretWord == "WASTE"){
+        document.getElementById("conclusion").innerHTML = "The production of goods is a large part of the average consumers climate impact. Don't replace stuff that still works, buy 2nd hand items, be critical of what you would like and what you actually need, dispose of reuseables in an appropriate manner."
+    } else if (secretWord == "MEATEATER" || secretWord == "VEGANISM" || secretWord == "VEGETARIAN" || secretWord == "COWS"){
+        document.getElementById("conclusion").innerHTML = "Eating habits matter! Whilst going vegan might be a daunting first step, you can greatly reduce your footprint by cutting cows and dairy products from your diet."
+    } else if (secretWord == "TRANSPORTATION" || secretWord == "COMMUTE"){
+        document.getElementById("conclusion").innerHTML = "Consider public transportation or get on your bike if the distance is manageable. Long term you could consider ways of reducing the distance you need to commute."
+    } else if (secretWord == "AUTOMOBILE" || secretWord == "DIESEL" || secretWord == "PETROL"){
+        document.getElementById("conclusion").innerHTML = "Use public transportation if available, get on that bike. If you are deeply reliant on a car, then changing to an electric vehicle will decrease your footprint"
+    } else if (secretWord == "AIRPLANES" || secretWord =="FLYING"){
+        document.getElementById("conclusion").innerHTML = "Fly less, if at all. Just one short return trip is more than double the emissions an average person can produce yearly if we want to sustain an habitable planet. It sucks, I know!"
+    } else {
+        document.getElementById("conclusion").innerHTML = "Switch to renewable energy sources if possible, turn unused items/lightning off, turn down the heat and wear a sweater!"
+    }
+    alert(secretWord);
+}
+
+function setAnswerWas(){
+    document.getElementById("answer_was").innerHTML = secretWord;
+}
 
 // Function to select the secret word to guess
 function selectSecretWord(){
     secretWord = hidden_words[Math.floor(Math.random() * hidden_words.length)];
-    secretWord2 = secretWord;
+    setConclusion()
+    setAnswerWas()
     secretWord = secretWord.split("").map(letter => " _ ").join("");
     document.getElementById("secret_word").innerHTML = secretWord;
 }
@@ -68,12 +90,14 @@ function startGame(){
 function lostGame(){
     document.getElementById("globe").src ="assets/images/failure_image.jpg";
     document.getElementById("wrong_guesses").style.display = "none";
+    document.getElementById("answer_box").style.display = "block";
     document.getElementById("game_area_heading").innerHTML = "FAILURE!";
     document.getElementById("secret_word").innerHTML = "You have failed, a string of poor choices has led humans to the brink of extinction. Find solace in knowning that the planet will probably better off without us!"
-    document.getElementById("answer_box").style.display = "block";
-    document.getElementById("answer_was").innerHTML = secretWord2;
-   
+    document.getElementById("letters").style.display = "none";
+    document.getElementById("conclusion").style.display = "block";
 }
+
+
 function wonGame(){
 
 }
@@ -144,6 +168,8 @@ function reStartGame(){
     document.getElementById("remaining_guesses").innerHTML = 6;
     document.getElementById("answer_box").style.display = "none";
     document.getElementById("game_area_heading").innerHTML = "Can you do better this time around?";
+    document.getElementById("letters").style.display = "block";
+    document.getElementById("conclusion").style.display = "none";
     document.getElementById("A").disabled = false;
     selectSecretWord();
 }
