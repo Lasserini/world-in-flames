@@ -17,9 +17,6 @@ function toggleAbout(){
     }
 }
 
-// Changes cursor to another look
-document.body.style.cursor = "pointer";
-
 // An array with possible hidden words
 let hidden_words = [
     "CONSUMERISM",

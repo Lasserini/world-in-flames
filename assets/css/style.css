@@ -155,6 +155,11 @@ header img {
 
 #game_area {
     display: none;
+    font-size: 24px;
+}
+
+#secret_word {
+    margin: 10px auto;
 }
 
 #game_area hr {
@@ -162,3 +167,20 @@ header img {
     background-color: rgba(240, 159, 9, 0.541);
 }
 
+#letters button {
+    font-size: 24px;
+    margin: 20px 2.5px;
+    padding: 2.5px 5px;
+    color: #FFFFFF;
+    background-color: #df0d0d;
+}
+
+#letters button:hover {
+    color: #df0d0d;
+    background-color: #FFFFFF;
+}
+
+#letters button:disabled {
+    color: #000000;
+    background-color: #000000;
+}

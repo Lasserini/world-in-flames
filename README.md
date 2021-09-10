@@ -90,9 +90,9 @@ The website targets people who want to be a part of changing the climate crisis 
 
 
 ### 2.2 Features left to implement 
-- The factual information could be clearer (and have more numbers).
 - Add a visual element with a thermometer to replace the Disaster Strikes in x wrong guesses counter.
 - Add a feature that ensures a user doesn't get the same Hidden word again in the current session.
+- Learn how to generate the letter buttons with JavaScript to clean up some html code.
 
 ## 3. Technologies Used
 
