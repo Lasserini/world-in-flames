@@ -132,31 +132,31 @@ function correctGuess(){
 }
 
 function incorrectGuess(){
-    let remainingGuesses = document.getElementById("remaining_guesses");
+    let remainingGuesses = document.getElementById("remaining_guesses").textContent;
     switch (remainingGuesses) {
         case "6":
             document.getElementById("globe").src ="assets/images/stage2.jpg";
-            remainingGuesses --;
+            remainingGuesses--;
             document.getElementById("remaining_guesses").innerHTML = remainingGuesses;
             break;
         case "5":
             document.getElementById("globe").src ="assets/images/stage3.jpg";
-            remainingGuesses --;
+            remainingGuesses--;
             document.getElementById("remaining_guesses").innerHTML = remainingGuesses;
             break;
         case "4":
             document.getElementById("globe").src ="assets/images/stage4.jpg";
-            remainingGuesses --;
+            remainingGuesses--;
             document.getElementById("remaining_guesses").innerHTML = remainingGuesses;
             break;
         case "3":
             document.getElementById("globe").src ="assets/images/stage5.jpg";
-            remainingGuesses --;
+            remainingGuesses--;
             document.getElementById("remaining_guesses").innerHTML = remainingGuesses;
             break;
         case "2":
             document.getElementById("globe").src ="assets/images/stage6.jpg";
-            remainingGuesses --;
+            remainingGuesses--;
             document.getElementById("remaining_guesses").innerHTML = remainingGuesses;
             break;
         default:
