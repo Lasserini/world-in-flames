@@ -1,6 +1,6 @@
 <h1 align="center">World In Flames Website</h1>
 
-<h2 align="center"><img src="insert image link" ></h2>
+<h2 align="center"><img src="assets/images/asIresponsive.png"></h2>
 
 This website is an infotainment Hangman Game with a climate crisis theme. The primary purpose is to provide a fun and interesting game experience. Secondarily the site aims to incite its users to take a closer look at how they can help combat climate change.
 
@@ -17,18 +17,26 @@ When the user succeeds or fails, the user is meet by an end screen with provides
 ### 1.2 Project goals
 - Create a Hangman Game using Javascript.
 - Add a climate crises theme that makes for an interesting game experience.
-- Nudge the user towards seeking further information about their personal climate footprint.
+- Nudge the user towards thinking about their personal climate footprint.
 
 ### 1.3 Target audience
 The website is aimed at people who enjoy quick games, its intended to be lighthearted enough to provide a fun experience, but also has a more serious backdrop to which it hopes cast some attention to.<br>
-The website targets people who want to be a part of changing the climate crisis we are currently in, but feel helpless or are unaware of where to begin. 
+The website targets people who want to be a part of changing the climate crisis we are currently in, but feel helpless or are unaware of where to begin.
 
 ### 1.4 User stories
-- As an owner, 
-- As an owner, 
-- As a user, 
-- As a user, 
-
+- As an owner, I want to make the user think about the climate crisis.
+- As an owner, I want to provide the user with ideas for making small changes to help lower their climate footprint.
+- As an owner, I want to provide an easily understandable game experience.
+- As a user, I want to know how the game works.
+- As a user, I want to know more about the idea behind the game.
+- As a user, I want to jump straight into the gameplay action.
+- As a user, I want a background story to get me excited about playing a game.
+- As a user, I want a visual experience that enchances the gameplay experience.
+- As a user, I want to restart my game before it ends.
+- As a user, I want to return to the index page to read the rules again.
+- As a user, I want to play one more time.
+- As a user, I want to learn about small steps I can take to combat climate change.
+- As a user, I want to experience different endings.
 
 ### 1.5 Design
 -   #### Colour Scheme
@@ -55,38 +63,36 @@ The website targets people who want to be a part of changing the climate crisis 
 *   General   
     - A hero image that draws the user into the theme.
     - Responsive on all device sizes.
-    - 
-    - 
+    - A simple intuitive site design and gameplay experience.
     
     <br>
 *   The Header includes:
     - **The name of the game, and two burning globes on larger screen sizes** allows the user to clearly see what site they are visiting at any given moment.
 
     <br>
-*   The Footer includes:
-    - **Site Design Information** provides information about the site designer & the photographer providing the profiles photos.
-
-    <br>
 *   The Welcome (Index) page includes:
     - **A hero image** that draws the user into the theme and sets the mood.
     - **An Introduction** flavour text to set the scene.
     - **Rules button & accompanying tab** allows the user an overview of how the game is played.
-    - **Info button & accompanying tab** provides the user with some information about the purpose and movivation of the site, and a link to a carbon footprint calculator.
+    - **About button & accompanying tab** provides the user with some information about the purpose and movivation of the site, and a link to a carbon footprint calculator.
     - **A button that starts the game** to allow the user easy access to the site's primary function, which is playing the actual game.
 
     <br>
 *   The GameState page includes:
-    - **Introduction to Individual Therapy** allows the user insight to the Psychotherapists work methods and approach to the therapy.
-    - **List of the Psychotherapists Experience** allows the user to see what issues the Psychotherapist is experienced with.
-    - **Contact Information** a call-to-action.
-    - **Price and duration information** provides necessary support information for potential clients.
+    - **Imagery that change as the game progress** gives the user a stronger thematic feel. Whilst you are failing to safe the globe, you can see its state deteriorating.
+    - **A counter that displays remaining number of attempts** allows the user to see how much time is left, and adds a sense of urgency.
+    - **A button to play again** allows the user to restart the game if wanted.
+    - **A back button** provides an easy way for the user to return to the index page.
+    - **The actual gameplay** which consists of the hidden letter to guess, and letter buttons to press. Allows the user to play the game.
 
     <br>
 *   The Conclusion page includes:
-    - **Introduction to Couples Therapy** allows the user insight to the Psychotherapists work methods and approach to the therapy.
-    - **List of the Psychotherapists Experience** allows the user to see what issues the Psychotherapist is experienced with.
-    - **Contact Information** a call-to-action.
-    - **Price and duration information** provides necessary support information for potential clients.
+    - **A final image** giving the user a strong visual indication as to whether they won or lost.
+    - **A reveal of the secret word** allows the user to see what the correct word was.
+    - **A flavourtext ending** provides a textual indication of how well the user did.
+    - **Information about the hidden word** provides some linkage to the real world, and why the hidden word was included in the game. Also attempts to provide some food for thought on how the user can alter their own behavious within the category the word is taken from.
+    - **A button to play again** allows the user to restart the game if wanted.
+    - **A back button** provides an easy way for the user to return to the index page.
 
 
 ### 2.2 Features left to implement 
@@ -120,6 +126,8 @@ The website targets people who want to be a part of changing the climate crisis 
     - Used to test the sites accessibility and performance.
 1. [Responsive Design Checker:](https://www.responsivedesignchecker.com/)
     - Used in the testing process to check responsiveness on various devices.
+1. [Am I Responsive:](http://ami.responsivedesign.is/)
+    - Used for quick glance at responsiveness and for README image.
 1. [W3C Markup Validator](https://validator.w3.org/#validate_by_input)
     - Used to validate the HTML code.
 1. [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)

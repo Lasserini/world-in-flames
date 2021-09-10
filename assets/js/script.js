@@ -38,7 +38,7 @@ let hidden_words = [
     "HEATING",
     "ELECTRICITY",
     "POWER"
-]
+];
 
 // Variables used accoss multiple functions
 let secretWord;
@@ -48,17 +48,17 @@ let usedLetters = [];
 // Function that alters the conclusion depending on word chosen
 function setConclusion(){
     if (secretWord == "CONSUMERISM" || secretWord == "SHOPPING" || secretWord == "WASTE" || secretWord =="REUSEABLE"){
-        document.getElementById("conclusion").innerHTML = "The production of goods is a large part of the average consumers climate impact. Don't replace stuff that still works, buy 2nd hand items, be critical of what you would like and what you actually need, dispose of reuseables in an appropriate manner."
+        document.getElementById("conclusion").innerHTML = "The production of goods is a large part of the average consumers climate impact. Don't replace stuff that still works, buy 2nd hand items, be critical of what you would like and what you actually need, dispose of reuseables in an appropriate manner.";
     } else if (secretWord == "MEATEATER" || secretWord == "VEGANISM" || secretWord == "VEGETARIAN" || secretWord == "COWS"){
-        document.getElementById("conclusion").innerHTML = "Eating habits matter! Whilst going vegan might be a daunting first step, you can greatly reduce your footprint by cutting cows and dairy products from your diet."
+        document.getElementById("conclusion").innerHTML = "Eating habits matter! Whilst going vegan might be a daunting first step, you can greatly reduce your footprint by cutting cows and dairy products from your diet.";
     } else if (secretWord == "TRANSPORTATION" || secretWord == "COMMUTE"){
-        document.getElementById("conclusion").innerHTML = "Consider public transportation or get on your bike if the distance is manageable. Long term you could consider ways of reducing the distance you need to commute."
+        document.getElementById("conclusion").innerHTML = "Consider public transportation or get on your bike if the distance is manageable. Long term you could consider ways of reducing the distance you need to commute.";
     } else if (secretWord == "AUTOMOBILE" || secretWord == "DIESEL" || secretWord == "PETROL"){
-        document.getElementById("conclusion").innerHTML = "Use public transportation if available, get on that bike. If you are deeply reliant on a car, then changing to an electric vehicle will decrease your footprint"
+        document.getElementById("conclusion").innerHTML = "Use public transportation if available, get on that bike. If you are deeply reliant on a car, then changing to an electric vehicle will decrease your footprint";
     } else if (secretWord == "AIRPLANES" || secretWord =="FLYING" || secretWord =="HOLIDAY"){
-        document.getElementById("conclusion").innerHTML = "Fly less, if at all. Just one short return trip is more than double the emissions an average person can produce yearly if we want to sustain an habitable planet. It sucks, I know!"
+        document.getElementById("conclusion").innerHTML = "Fly less, if at all. Just one short return trip is more than double the emissions an average person can produce yearly if we want to sustain an habitable planet. It sucks, I know!";
     } else {
-        document.getElementById("conclusion").innerHTML = "Switch to renewable energy sources if possible, turn unused items/lightning off, turn down the heat and wear a sweater!"
+        document.getElementById("conclusion").innerHTML = "Switch to renewable energy sources if possible, turn unused items/lightning off, turn down the heat and wear a sweater!";
     }
 }
 
@@ -69,9 +69,9 @@ function setAnswerWas(){
 // Function to select the secret word to guess
 function selectSecretWord(){
     secretWord = hidden_words[Math.floor(Math.random() * hidden_words.length)];
-    setConclusion()
-    setAnswerWas()
-    hiddenWord()
+    setConclusion();
+    setAnswerWas();
+    hiddenWord();
 }
 
 // Function to display the secret word in a hidden way, and also to update it during the game
@@ -94,11 +94,11 @@ function letterButtons(){
 // Function that transforms screen from Welcome Page & starts GameState mode
 function startGame(){
     document.getElementById("globe").src ="assets/images/stage1.jpg";
-    removeIntro = document.getElementById("intro").style.display = "none";
+    document.getElementById("intro").style.display = "none";
     document.getElementById("popup_wrap").style.display = "none";
     document.getElementById("wrong_guesses").style.display = "block";
     document.getElementById("game_area").style.display = "block";
-    letterButtons()
+    letterButtons();
     selectSecretWord();
 }
 
@@ -108,7 +108,7 @@ function lostGame(){
     document.getElementById("wrong_guesses").style.display = "none";
     document.getElementById("answer_box").style.display = "block";
     document.getElementById("game_area_heading").innerHTML = "FAILURE!";
-    document.getElementById("secret_word").innerHTML = "You have failed, a string of poor choices has led humans to the brink of extinction. Find solace in knowning that the planet will probably better off without us!"
+    document.getElementById("secret_word").innerHTML = "You have failed, a string of poor choices has led humans to the brink of extinction. Find solace in knowning that the planet will probably better off without us!";
     document.getElementById("letters").style.display = "none";
     document.getElementById("conclusion").style.display = "block";
 }
@@ -118,16 +118,16 @@ function wonGame(){
     document.getElementById("wrong_guesses").style.display = "none";
     document.getElementById("answer_box").style.display = "block";
     document.getElementById("game_area_heading").innerHTML = "SUCCESS!";
-    document.getElementById("secret_word").innerHTML = "Congratulations hero! You excellent choices has saved the human race. Now it's time to apply your superpowers to reduce your own climate footprint! Go now hero, I believe in you."
+    document.getElementById("secret_word").innerHTML = "Congratulations hero! You excellent choices has saved the human race. Now it's time to apply your superpowers to reduce your own climate footprint! Go now hero, I believe in you.";
     document.getElementById("letters").style.display = "none";
     document.getElementById("conclusion").style.display = "block";
 }
 
 // Functions to handle corret & incorrest guesses
 function correctGuess(){
-    hiddenWord()
+    hiddenWord();
     if (secretWordState === secretWord){
-        wonGame()
+        wonGame();
     }
 }
 
@@ -186,11 +186,11 @@ function reStartGame(){
     document.getElementById("letters").style.display = "block";
     document.getElementById("conclusion").style.display = "none";
     usedLetters = [];
-    letterButtons()
+    letterButtons();
     selectSecretWord();
 }
 
 // Function to reset the page
 function resetPage(){
-    history.go()
+    history.go();
 }
