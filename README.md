@@ -1,6 +1,6 @@
 <h1 align="center">World In Flames Website</h1>
 
-<h2 align="center"><img src="assets/images/asIresponsive.png"></h2>
+<h2 align="center"><img src="https://github.com/Lasserini/world-in-flames/blob/main/assets/images/amIresponsive.png"></h2>
 
 This website is an infotainment Hangman Game with a climate crisis theme. The primary purpose is to provide a fun and interesting game experience. Secondarily the site aims to incite its users to take a closer look at how they can help combat climate change.
 
@@ -136,7 +136,7 @@ The website targets people who want to be a part of changing the climate crisis 
     - Used to check JavaScript code for issues.
 
 ## 4. Testing
-The testing process can be found [here.](adjust with correct link)
+The testing process can be found [here.](https://github.com/Lasserini/world-in-flames/blob/main/TESTING.md)
 
 ## 5. Deployment
 
@@ -199,17 +199,11 @@ image by <a href="https://pixabay.com/users/dieterich01-2819333/?utm_source=link
 - stage3
 image by <a href="https://pixabay.com/users/tumisu-148124/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5268446">Tumisu</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5268446">Pixabay</a>
 
-- stage4
-image by urikyo33 from PixabayImage by <a href="https://pixabay.com/users/urikyo33-11404887/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3999277">urikyo33</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3999277">Pixabay</a>
+- stage4 & stage5
+images by <a href="https://pixabay.com/users/urikyo33-11404887/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3999277">urikyo33</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3999277">Pixabay</a>
 
-- stage5
-image by <a href="https://pixabay.com/users/urikyo33-11404887/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3999277">urikyo33</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3999277">Pixabay</a>
-
-- stage6
+- stage6 & failure_image
 image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=960446">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=960446">Pixabay</a>
-
-- failure_image
-by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=422748">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=422748">Pixabay</a>
 
 * success_image
 by <a href="https://pixabay.com/users/un-perfekt-9295476/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3630164">un-perfekt</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3630164">Pixabay</a>
