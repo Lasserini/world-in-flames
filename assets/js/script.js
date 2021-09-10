@@ -56,7 +56,6 @@ function setConclusion(){
     } else {
         document.getElementById("conclusion").innerHTML = "Switch to renewable energy sources if possible, turn unused items/lightning off, turn down the heat and wear a sweater!"
     }
-    alert(secretWord);
 }
 
 function setAnswerWas(){
@@ -75,16 +74,12 @@ function selectSecretWord(){
 // Function that transforms screen from Welcome Page & starts GameState mode
 function startGame(){
     document.getElementById("globe").src ="assets/images/stage1.jpg";
-    let removeIntro = document.getElementById("intro");
-        removeIntro.style.display = "none";
-    let addGuessCounter = document.getElementById("wrong_guesses");
-        addGuessCounter.style.display = "block";
-    let addGameArea = document.getElementById("game_area");
-        addGameArea.style.display = "block";
+    removeIntro = document.getElementById("intro").style.display = "none";
+    document.getElementById("popup_wrap").style.display = "none";
+    document.getElementById("wrong_guesses").style.display = "block";
+    document.getElementById("game_area").style.display = "block";
     selectSecretWord();
 }
-
-
 
 // Functions for the conclusions
 function lostGame(){
@@ -97,19 +92,22 @@ function lostGame(){
     document.getElementById("conclusion").style.display = "block";
 }
 
-
 function wonGame(){
-
+    document.getElementById("globe").src ="assets/images/succes_image.jpg";
+    document.getElementById("wrong_guesses").style.display = "none";
+    document.getElementById("answer_box").style.display = "block";
+    document.getElementById("game_area_heading").innerHTML = "SUCCESS!";
+    document.getElementById("secret_word").innerHTML = "Congratulations hero! You excellent choices has saved the human race. Now it's time to apply your superpowers to reduce your own climate footprint! Go now hero, I believe in you."
+    document.getElementById("letters").style.display = "none";
+    document.getElementById("conclusion").style.display = "block";
 }
 
 // Functions to handle corret & incorrest guesses
 function correctGuess(){
     
+
+    wonGame()
 }
-
-
-
-
 
 
 function incorrectGuess(){
@@ -153,7 +151,7 @@ function checkGuess(letter){
     if (secretWord.indexOf(letter) >= 0) {
 
     }
-    lostGame();
+    wonGame();
     document.getElementById(letter).disabled = true;
 }
 
