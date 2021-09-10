@@ -148,16 +148,17 @@ header img {
 }
 
 /* Gameplay area styling */
-#wrong_guesses {
+#wrong_guesses, #answer_box {
     display: none;
     margin: 10px auto;
     font-size: 18px;
     color: #df0d0d;
 }
 
+
 #game_area {
     display: none;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 #secret_word {

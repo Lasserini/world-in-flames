@@ -40,27 +40,53 @@ let hidden_words = [
 
 // Variables used accoss multiple functions
 let secretWord = [];
+let secretWord2;
 
 // Function to select the secret word to guess
 function selectSecretWord(){
     secretWord = hidden_words[Math.floor(Math.random() * hidden_words.length)];
+    secretWord2 = secretWord;
     secretWord = secretWord.split("").map(letter => " _ ").join("");
     document.getElementById("secret_word").innerHTML = secretWord;
 }
 
+// Function that transforms screen from Welcome Page & starts GameState mode
+function startGame(){
+    document.getElementById("globe").src ="assets/images/stage1.jpg";
+    let removeIntro = document.getElementById("intro");
+        removeIntro.style.display = "none";
+    let addGuessCounter = document.getElementById("wrong_guesses");
+        addGuessCounter.style.display = "block";
+    let addGameArea = document.getElementById("game_area");
+        addGameArea.style.display = "block";
+    selectSecretWord();
+}
+
+
+
 // Functions for the conclusions
 function lostGame(){
     document.getElementById("globe").src ="assets/images/failure_image.jpg";
+    document.getElementById("wrong_guesses").style.display = "none";
+    document.getElementById("game_area_heading").innerHTML = "FAILURE!";
+    document.getElementById("secret_word").innerHTML = "You have failed, a string of poor choices has led humans to the brink of extinction. Find solace in knowning that the planet will probably better off without us!"
+    document.getElementById("answer_box").style.display = "block";
+    document.getElementById("answer_was").innerHTML = secretWord2;
+   
 }
-
 function wonGame(){
 
 }
 
 // Functions to handle corret & incorrest guesses
 function correctGuess(){
-
+    
 }
+
+
+
+
+
 
 function incorrectGuess(){
     let remainingGuesses = document.getElementById("remaining_guesses");
@@ -91,38 +117,33 @@ function incorrectGuess(){
             document.getElementById("remaining_guesses").innerHTML = remainingGuesses;
             break;
         default:
+            remainingGuesses --;
+            document.getElementById("remaining_guesses").innerHTML = remainingGuesses;
             lostGame();
             break;
     }
 }
 
+
 function checkGuess(letter){
     if (secretWord.indexOf(letter) >= 0) {
 
     }
-
+    lostGame();
     document.getElementById(letter).disabled = true;
 }
 
 
-// Function that transforms screen from Welcome Page & starts GameState mode
-function startGame(){
-    document.getElementById("globe").src ="assets/images/stage1.jpg";
-    let removeIntro = document.getElementById("intro");
-        removeIntro.style.display = "none";
-    let addGuessCounter = document.getElementById("wrong_guesses");
-        addGuessCounter.style.display = "block";
-    let addGameArea = document.getElementById("game_area");
-        addGameArea.style.display = "block";
-    selectSecretWord();
-}
 
 // Functions that resets the GameState page when Play Again button is pressed.
 
     // REQUIRES BETTER SOLUTION FOR RESETTING LETTERS!
 function reStartGame(){
     document.getElementById("globe").src ="assets/images/stage1.jpg";
+    document.getElementById("wrong_guesses").style.display = "block";
     document.getElementById("remaining_guesses").innerHTML = 6;
+    document.getElementById("answer_box").style.display = "none";
+    document.getElementById("game_area_heading").innerHTML = "Can you do better this time around?";
     document.getElementById("A").disabled = false;
     selectSecretWord();
 }
