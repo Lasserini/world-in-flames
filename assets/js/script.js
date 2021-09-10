@@ -21,6 +21,7 @@ function toggleAbout(){
 let hidden_words = [
     "CONSUMERISM",
     "SHOPPING",
+    "REUSEABLE",
     "WASTE",
     "MEATEATER",
     "VEGANISM",
@@ -31,20 +32,21 @@ let hidden_words = [
     "AUTOMOBILE",
     "DIESEL",
     "PETROL",
-    "HOLIDAYS",
+    "HOLIDAY",
     "AIRPLANES",
     "FLYING",
     "HEATING",
-    "ELECTRICITY"
+    "ELECTRICITY",
+    "POWER"
 ]
 
 // Variables used accoss multiple functions
 let secretWord = [];
-let secretWordState 
+let secretWordState;
 
 // Function that alters the conclusion depending on word chosen
 function setConclusion(){
-    if (secretWord == "CONSUMERISM" || secretWord == "SHOPPING" || secretWord == "WASTE"){
+    if (secretWord == "CONSUMERISM" || secretWord == "SHOPPING" || secretWord == "WASTE" || secretWord =="REUSEABLE"){
         document.getElementById("conclusion").innerHTML = "The production of goods is a large part of the average consumers climate impact. Don't replace stuff that still works, buy 2nd hand items, be critical of what you would like and what you actually need, dispose of reuseables in an appropriate manner."
     } else if (secretWord == "MEATEATER" || secretWord == "VEGANISM" || secretWord == "VEGETARIAN" || secretWord == "COWS"){
         document.getElementById("conclusion").innerHTML = "Eating habits matter! Whilst going vegan might be a daunting first step, you can greatly reduce your footprint by cutting cows and dairy products from your diet."
@@ -52,7 +54,7 @@ function setConclusion(){
         document.getElementById("conclusion").innerHTML = "Consider public transportation or get on your bike if the distance is manageable. Long term you could consider ways of reducing the distance you need to commute."
     } else if (secretWord == "AUTOMOBILE" || secretWord == "DIESEL" || secretWord == "PETROL"){
         document.getElementById("conclusion").innerHTML = "Use public transportation if available, get on that bike. If you are deeply reliant on a car, then changing to an electric vehicle will decrease your footprint"
-    } else if (secretWord == "AIRPLANES" || secretWord =="FLYING"){
+    } else if (secretWord == "AIRPLANES" || secretWord =="FLYING" || secretWord =="HOLIDAY"){
         document.getElementById("conclusion").innerHTML = "Fly less, if at all. Just one short return trip is more than double the emissions an average person can produce yearly if we want to sustain an habitable planet. It sucks, I know!"
     } else {
         document.getElementById("conclusion").innerHTML = "Switch to renewable energy sources if possible, turn unused items/lightning off, turn down the heat and wear a sweater!"
@@ -122,11 +124,10 @@ function wonGame(){
 
 // Functions to handle corret & incorrest guesses
 function correctGuess(){
-    
-
-    wonGame()
+    if (secretWordState === secretWord){
+        wonGame()
+    }
 }
-
 
 function incorrectGuess(){
     let remainingGuesses = document.getElementById("remaining_guesses");
@@ -162,15 +163,13 @@ function incorrectGuess(){
     }
 }
 
-
 function checkGuess(letter){
-    document.getElementById(letter).disabled = true;
-
-    if (secretWord.indexOf(letter) >= 0) {
+    if (secretWord.indexOf(letter) >= 0){
         correctGuess();
     } else {
         incorrectGuess();
     }
+    document.getElementById(letter).disabled = true;
 }
 
 // Functions that resets the GameState page when Play Again button is pressed.
