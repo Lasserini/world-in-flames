@@ -169,8 +169,6 @@ function checkGuess(letter){
 
 
 // Functions that resets the GameState page when Play Again button is pressed.
-
-    // REQUIRES BETTER SOLUTION FOR RESETTING LETTERS!
 function reStartGame(){
     document.getElementById("globe").src ="assets/images/stage1.jpg";
     document.getElementById("wrong_guesses").style.display = "block";
@@ -179,10 +177,9 @@ function reStartGame(){
     document.getElementById("game_area_heading").innerHTML = "Good luck - You can do it!";
     document.getElementById("letters").style.display = "block";
     document.getElementById("conclusion").style.display = "none";
-    document.getElementById("A").disabled = false;
+    letterButtons()
     selectSecretWord();
 }
-
 
 // Function to reset the page
 function resetPage(){
