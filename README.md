@@ -51,11 +51,11 @@ The website targets people who want to be a part of changing the climate crisis 
     -   The conclusion also uses images to encite an emotional response, either showing an exploding planet upon failure or a healthier planet upon succes.
 
 *   ### Wireframes
-    Desktop 800px+ | Smaller Devices Below 800px
+    Devices above 700px+ | Smaller devices below 700px
     --- | --- |
-    <a href="desktop index view">Index</a> | <a href="mobile index view">Index</a> 
-    <a href="gamestate desktop view">GameState</a> | <a href="gamestate mobile view">GameState</a>
-    <a href="desktop conclusion">Conclusion</a> | <a href="mobile conclusion">Conclusion</a>
+    <a href="https://github.com/Lasserini/world-in-flames/blob/main/assets/wireframes/Index%2C%20Desktop.png">Index</a> | <a href="mobile index view">Index</a> 
+    <a href="https://github.com/Lasserini/world-in-flames/blob/main/assets/wireframes/GameState%2C%20Desktop.png">GameState</a> | <a href="gamestate mobile view">GameState</a>
+    <a href="https://github.com/Lasserini/world-in-flames/blob/main/assets/wireframes/Conclusion%2C%20Desktop.png">Conclusion</a> | <a href="mobile conclusion">Conclusion</a>
 
 
 ## 2. Features
@@ -132,6 +132,8 @@ The website targets people who want to be a part of changing the climate crisis 
     - Used to validate the HTML code.
 1. [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
     - Used to validate the CSS code.
+1. [JSHint](https://jshint.com/)
+    - Used to check JavaScript code for issues.
 
 ## 4. Testing
 The testing process can be found [here.](adjust with correct link)
@@ -178,22 +180,53 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ## 6. Credits
 
-### Code
+### Code inspiration
 
- [Maybe add if used]
+- The function letterButtons() that makes the letter buttons is heavily inspired by https://www.youtube.com/watch?v=dgvyE1sJS3Y
+- Inspiration on how to make the game work comes from https://www.youtube.com/watch?v=dgvyE1sJS3Y & https://codepen.io/cathydutton/pen/ldazc 
 
 ### Content
 
 -   All content was written by the developer.
 
 ### Media
+- stage1 
+image by <a href="https://pixabay.com/users/wikiimages-1897/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=11015">WikiImages</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=11015">Pixabay</a>
 
-- add credits for the images.
+- stage2
+image by <a href="https://pixabay.com/users/dieterich01-2819333/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4481877">Lothar Dieterich</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4481877">Pixabay</a>
+
+- stage3
+image by <a href="https://pixabay.com/users/tumisu-148124/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5268446">Tumisu</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5268446">Pixabay</a>
+
+- stage4
+image by urikyo33 from PixabayImage by <a href="https://pixabay.com/users/urikyo33-11404887/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3999277">urikyo33</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3999277">Pixabay</a>
+
+- stage5
+image by <a href="https://pixabay.com/users/urikyo33-11404887/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3999277">urikyo33</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3999277">Pixabay</a>
+
+- stage6
+image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=960446">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=960446">Pixabay</a>
+
+- failure_image
+by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=422748">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=422748">Pixabay</a>
+
+* success_image
+by <a href="https://pixabay.com/users/un-perfekt-9295476/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3630164">un-perfekt</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3630164">Pixabay</a>
+
+- hero_image
+by <a href="https://pixabay.com/users/cristianis-2094012/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4776711">Cristian Ibarra</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4776711">Pixabay</a>
+
+- logo_left & logo_right
+image by <a href="https://pixabay.com/users/thedigitalartist-202249/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2254711">Pete Linforth</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2254711">Pixabay</a>
+
 
 ### Acknowledgements
 
-- My Mentor for continuous helpful feedback.
+- [W3Schools] https://www.w3schools.com/ for being a good friend whenever I needed to quickly read up on something.
 
 - Code Institute for providing me with the know-how necessary to code the website.
 
 - Scientists for stubbornly proving that the climate crises is manmade.
+
+- My wife for coping with me sitting behind the computer whilst in the middle of renovating our new house.
