@@ -155,7 +155,6 @@ header img {
     color: #df0d0d;
 }
 
-
 #game_area {
     display: none;
     font-size: 20px;
@@ -206,6 +205,11 @@ header img {
     #logo_img_left, #logo_img_right {
         display: none;
     }
+
+    #globe {
+        max-width: 100%;
+    }
+
     #wrap {
         max-width: 90vw;
     }
