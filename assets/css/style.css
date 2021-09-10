@@ -62,7 +62,9 @@ header img {
 
 /* Hero Image & stages of Hangman globe evolution Styling */
 #globe {
+    text-align: center;
     max-height: 40vh;
+    max-width: 80vh;
     margin: 0 auto;
 }
 
@@ -79,7 +81,7 @@ header img {
 }
 
 #intro p {
-    margin: 0 20%;
+    margin: 0 10%;
 }
 
 .buttons {
@@ -117,7 +119,7 @@ header img {
 #rules_content {
     display: none;
     float: left;
-    max-width: 35%;
+    max-width: 42%;
     margin-left: 25px;
     border: 2.5px solid rgba(240, 159, 9, 0.541);
     padding: 5px;
@@ -128,10 +130,10 @@ header img {
 #about_content {
     display: none;
     float: right;
-    max-width: 35%;
+    max-width: 42%;
     margin-right: 25px;
     border: 2.5px solid rgba(240, 159, 9, 0.541);
-    padding: 2.5px;
+    padding: 5px;
     text-align: left;
     line-height: 150%;
 }
@@ -183,4 +185,59 @@ header img {
 #letters button:disabled {
     color: #000000;
     background-color: #000000;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 850px){
+    #rules_content, #about_content{
+        float: none;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #logo_img_left, #logo_img_right {
+        display: none;
+    }
+    #wrap {
+        max-width: 90vw;
+    }
+
+    #intro p {
+        margin: 0 10%;
+    }
+
+    #letters button {
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #header {
+        height: 50px;
+    }
+
+    #header_logo h1 {
+        font-size: 40px;
+        letter-spacing: 1.5px;
+    }
+
+    #wrap {
+        max-width: 95vw;
+    }
+
+    #intro p {
+        margin: 0 5%;
+    }
+
+    .buttons button {
+        font-size: 16px;
+        padding: 2.5px;
+    }
+
+    #start_game {
+        font-size: 16px;
+    }
 }
