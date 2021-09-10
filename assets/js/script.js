@@ -40,6 +40,7 @@ let hidden_words = [
 
 // Variables used accoss multiple functions
 let secretWord = [];
+let secretWordState 
 
 // Function that alters the conclusion depending on word chosen
 function setConclusion(){
@@ -67,12 +68,17 @@ function selectSecretWord(){
     secretWord = hidden_words[Math.floor(Math.random() * hidden_words.length)];
     setConclusion()
     setAnswerWas()
-    secretWord = secretWord.split("").map(letter => " _ ").join("");
-    document.getElementById("secret_word").innerHTML = secretWord;
+    hiddenWord()
+}
+
+// Function to display the secret word in a hidden way, and also to update it during the game
+function hiddenWord(){
+    secretWordState = secretWord.split("").map(letter => " _ ").join("");
+    document.getElementById("secret_word").innerHTML = secretWordState;
 }
 
 // Function that creates the letter buttons. This portion of code is heavily inspired by https://www.youtube.com/watch?v=dgvyE1sJS3Y
-function letterButtons() {
+function letterButtons(){
     let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('').map(letter =>
         `
             <button id='` + letter + `'onClick="checkGuess('` + letter + `')">
@@ -158,15 +164,14 @@ function incorrectGuess(){
 
 
 function checkGuess(letter){
+    document.getElementById(letter).disabled = true;
+
     if (secretWord.indexOf(letter) >= 0) {
         correctGuess();
     } else {
         incorrectGuess();
     }
-    document.getElementById(letter).disabled = true;
 }
-
-
 
 // Functions that resets the GameState page when Play Again button is pressed.
 function reStartGame(){
