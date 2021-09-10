@@ -71,6 +71,17 @@ function selectSecretWord(){
     document.getElementById("secret_word").innerHTML = secretWord;
 }
 
+// Function that creates the letter buttons. This portion of code is heavily inspired by https://www.youtube.com/watch?v=dgvyE1sJS3Y
+function letterButtons() {
+    let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('').map(letter =>
+        `
+            <button id='` + letter + `'onClick="checkGuess('` + letter + `')">
+            ` + letter + `
+            </button>
+        `).join('');
+    document.getElementById("letters").innerHTML = alphabet;
+  }
+
 // Function that transforms screen from Welcome Page & starts GameState mode
 function startGame(){
     document.getElementById("globe").src ="assets/images/stage1.jpg";
@@ -78,6 +89,7 @@ function startGame(){
     document.getElementById("popup_wrap").style.display = "none";
     document.getElementById("wrong_guesses").style.display = "block";
     document.getElementById("game_area").style.display = "block";
+    letterButtons()
     selectSecretWord();
 }
 
@@ -139,8 +151,6 @@ function incorrectGuess(){
             document.getElementById("remaining_guesses").innerHTML = remainingGuesses;
             break;
         default:
-            remainingGuesses --;
-            document.getElementById("remaining_guesses").innerHTML = remainingGuesses;
             lostGame();
             break;
     }
@@ -149,9 +159,10 @@ function incorrectGuess(){
 
 function checkGuess(letter){
     if (secretWord.indexOf(letter) >= 0) {
-
+        correctGuess();
+    } else {
+        incorrectGuess();
     }
-    wonGame();
     document.getElementById(letter).disabled = true;
 }
 
@@ -165,7 +176,7 @@ function reStartGame(){
     document.getElementById("wrong_guesses").style.display = "block";
     document.getElementById("remaining_guesses").innerHTML = 6;
     document.getElementById("answer_box").style.display = "none";
-    document.getElementById("game_area_heading").innerHTML = "Can you do better this time around?";
+    document.getElementById("game_area_heading").innerHTML = "Good luck - You can do it!";
     document.getElementById("letters").style.display = "block";
     document.getElementById("conclusion").style.display = "none";
     document.getElementById("A").disabled = false;

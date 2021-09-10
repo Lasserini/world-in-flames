@@ -6,7 +6,7 @@ This website is an infotainment Hangman Game with a climate crisis theme. The pr
 
 The site was build as part of a Diploma in Software Development at Code Institute. Its the second porfolio project out of five, and makes use of HTML, CSS & JavaScript.
 
-[Visit the deployed website]("https://lasserini.github.io/world-in-flames/")
+[Visit the deployed website](https://lasserini.github.io/world-in-flames/)
 
 ## 1. User Experience (UX)
 
@@ -92,7 +92,7 @@ The website targets people who want to be a part of changing the climate crisis 
 ### 2.2 Features left to implement 
 - Add a visual element with a thermometer to replace the Disaster Strikes in x wrong guesses counter.
 - Add a feature that ensures a user doesn't get the same Hidden word again in the current session.
-- Learn how to generate the letter buttons with JavaScript to clean up some html code.
+- Consider is more factual information during the conclusion step is a good idea. Perhaps its ok to keep it light as is.
 
 ## 3. Technologies Used
 
