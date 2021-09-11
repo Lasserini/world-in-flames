@@ -19,7 +19,8 @@ Fixed one minor typo causing an error, afterwards this was the result.<br>
 ### 1.3 JSHint Validation
 After adding some semicolons, JSHint returns this result<br>
 <img src="https://github.com/Lasserini/world-in-flames/blob/main/assets/images/validation/worldinflames_jshint.png">
-- The 14 warnings relate to using newer JavaScript stuff. They are mostly warnings about using "let" to declare variables, and then some comments about using a few instances of template literals & arrow function syntax.
+- The 14 warnings relate to using newer JavaScript stuff. They are mostly warnings about using "let" to declare variables, and then some comments about using a few instances of template literals & arrow function syntax. The consequence is that the game doesn't work in Internet Explorer 11 (and old versions).
+- The 6 variables that JSHint thinks are unused, are all utilized by "button on click" attributes in the HTML document.
 
 ## 2. Responsiveness
 To test responsiveness across various devices & screensizes, I used [Responsive Design Checkcer](https://www.responsivedesignchecker.com/), a 17`` laptop & a OnePlus 6T mobile phone.
@@ -35,11 +36,11 @@ Images | Good | Good | Good | Good | Good | Good | Good
 Renders as expected | Yes | Yes | Yes | Yes | Yes | Yes | Yes
 
 ## 3. Browser Compatability
-Browser -> | Chrome | Firefox | Edge | Safari | Opera | IE
+Browser -> | Chrome | Firefox | Edge | Safari | Opera | IE-11
 --- | --- | --- | --- | --- | --- | --- |
-Appearance  | Good | Good | Good | Decent | Good | Good
+Appearance  | Good | Good | Good | Troubled | Good | Good
 Responsiveness | Good | Good | Good | Good | Good | Good
-Functionality | Good | Good | Good | Good | Good | Good
+Functionality | Good | Good | Good | Good | Good | Doesn't work
 
 ## 4. Lighthouse Testing
 The first run through suggested adding rel="noopener" tags to the external links. After doing that this was the results. I do have a suspicion that this test only takes the welcome screen into account though.<br>
@@ -85,7 +86,7 @@ For mobile:<br>
     - The user can either fail or win, which results in two different outcomes.
     - The user can experience six different endings based upon the word they had to guess.
 
-## 5. Known Bugs
+## 5. Known & Fixed Bugs
 - The link to my Github Repository wasn't displaying properly on the deployed site.<br>
     - Removed the copyright symbol, seems to have fixed the issue.
 
@@ -101,3 +102,9 @@ For mobile:<br>
 
 - The background colours on the images aren't all as black as I would like them to be.<br>
     - Decided that I didn't want to alter too much to images I credit to others, and that the issue wasn't the most essential think to spend time working on.
+
+- The site doesn't work well (or at all) in Internet Explorer 11 (& previous versions), as the JavaScript code utilize various things that wasn't supported in the outdated JavaScript versions IE uses.
+    - I'm trying to find a way to detect that a user is using IE11, so I can atleast provide an explanation of why the game doesn't work.
+
+- Safari doesn't load 3 of the images, instead showing a green square.
+    - Time to get to work.
