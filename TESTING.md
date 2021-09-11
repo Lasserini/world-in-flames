@@ -28,19 +28,21 @@ To test responsiveness across various devices & screensizes, I used [Responsive 
 Viewport | iPhone 5/5s<br>320x568 | Galaxy S5/S6/S/<br>360*640 | OnePlus 6T<br>412x892 | Ipad Mini<br>768x1012 | Ipad Pro<br>1366x1024 | Desktop 1024px | Desktop 1440px
 --- | --- | --- | --- | --- | --- | --- | --- |
 Site responsiveness<br>above 850px width  | n/a | n/a| n/a | n/a | Good | Good | Good
-Site responsiveness<br>between 450px & 850px width | n/a | n/a | n/a | Image position issues | n/a | n/a | n/a
+Site responsiveness<br>between 450px & 850px width | n/a | n/a | n/a | Good | n/a | n/a | n/a
 Site responsiveness<br>below 450px width | Good | Good | Good | n/a | n/a | n/a | n/a
 Button functionality  | Good | Good | Good | Good | Good | Good | Good
 Rules & About boxes functionality  | Good | Good | Good | Good | Good | Good | Good
-Images | Good | Good | Good | Mixed | Good | Good | Good
-Renders as expected | Yes | Yes | Yes | Most of it | Yes | Yes | Yes
+Images | Good | Good | Good | Good | Good | Good | Good
+Renders as expected | Yes | Yes | Yes | Yes | Yes | Yes | Yes
 
 ## 3. Browser Compatability
 Browser -> | Chrome | Firefox | Edge | Safari | Opera | IE-11
 --- | --- | --- | --- | --- | --- | --- |
-Appearance  | Good | Good | Good | Good | Good | Good
+Appearance  | Good (NB) | Good | Good | Good | Good | Good
 Responsiveness | Good | Good | Good | Good | Good | Good
 Functionality | Good | Good | Good | Good | Good | Doesn't work
+
+NB - Chrome Appearance: It works as intended in Windows, Android OS & on Iphone. I did however come across an issue with loading 3 of the images when using Chrome on a MacBook, tried on a different Macbook where it worked just fine. See Known & Fixed Bugs for more information.
 
 ## 4. Lighthouse Testing
 The first run through suggested adding rel="noopener" tags to the external links. After doing that this was the results. I do have a suspicion that this test only takes the welcome screen into account though.<br>
@@ -99,6 +101,9 @@ For mobile:<br>
 
 - For the longest time the actual game wasn't working.<br>
     - After some research I found a way to restructure some of the logic behind it, adding a second version of the hidden word to have one to alter during gameplay was essential.
+
+- Problem with images "sliding to the right" on devices between 700 & 900 (ish)px wide.
+    - Fixed an oversight in the CSS file, which allowed the globe image to become larger than the wrap it was meant to stay inside.
 
 - The background colours on the images aren't all as black as I would like them to be.<br>
     - Decided that I didn't want to alter too much to images I credit to others, and that the issue wasn't the most essential think to spend time working on.

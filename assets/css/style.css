@@ -42,7 +42,7 @@ header {
 
 header img {
     max-height: 90%;
-    margin: 3px;
+    margin: 2.5px;
 }
 
 #logo_img_left {
@@ -64,7 +64,7 @@ header img {
 #globe {
     text-align: center;
     max-height: 40vh;
-    max-width: 80vw;
+    max-width: 60vw;
     margin: 0 auto;
 }
 
