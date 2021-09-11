@@ -69,7 +69,7 @@ function setAnswerWas(){
 // Function to select the secret word to guess
 function selectSecretWord(){
     if (hiddenWords.length == 0){
-        alert ("You've tried all the words this game has to offer. Click the back button to restock the list of words")
+        alert ("You tried all the words this game has to offer. Click the back button to restock the list of words");
     } else {
     secretWord = hiddenWords[Math.floor(Math.random() * hiddenWords.length)];
     setConclusion();
@@ -193,7 +193,6 @@ function reStartGame(){
     usedLetters = [];
     letterButtons();
     selectSecretWord();
-    alert(hiddenWords);
 }
 
 // Function to reset the page
