@@ -53,9 +53,9 @@ The website targets people who want to be a part of changing the climate crisis 
 *   ### Wireframes
     Devices above 700px+ | Smaller devices below 700px
     --- | --- |
-    <a href="https://github.com/Lasserini/world-in-flames/blob/main/assets/wireframes/Index%2C%20Desktop.png">Index</a> | <a href="mobile index view">Index</a> 
-    <a href="https://github.com/Lasserini/world-in-flames/blob/main/assets/wireframes/GameState%2C%20Desktop.png">GameState</a> | <a href="gamestate mobile view">GameState</a>
-    <a href="https://github.com/Lasserini/world-in-flames/blob/main/assets/wireframes/Conclusion%2C%20Desktop.png">Conclusion</a> | <a href="mobile conclusion">Conclusion</a>
+    <a href="https://github.com/Lasserini/world-in-flames/blob/main/assets/wireframes/Index%2C%20Desktop.png">Index</a> | <a href="https://github.com/Lasserini/world-in-flames/blob/main/assets/wireframes/Index%2C%20Mobile.png">Index</a> 
+    <a href="https://github.com/Lasserini/world-in-flames/blob/main/assets/wireframes/GameState%2C%20Desktop.png">GameState</a> | <a href="https://github.com/Lasserini/world-in-flames/blob/main/assets/wireframes/GameState%2C%20Mobile.png">GameState</a>
+    <a href="https://github.com/Lasserini/world-in-flames/blob/main/assets/wireframes/Conclusion%2C%20Desktop.png">Conclusion</a> | <a href="https://github.com/Lasserini/world-in-flames/blob/main/assets/wireframes/Conclusion%2C%20Mobile.png">Conclusion</a>
 
 
 ## 2. Features
