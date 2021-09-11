@@ -43,7 +43,11 @@ Responsiveness | Good | Good | Good | Good | Good | Good
 Functionality | Good | Good | Good | Good | Good | Good
 
 ## 4. Lighthouse Testing
-
+The first run through suggested adding rel="noopener" tags to the external links. After doing that this was the results. I do have a suspicion that this test only takes the welcome screen into account though.<br>
+For desktop:<br>
+<img src="https://github.com/Lasserini/world-in-flames/blob/main/assets/images/validation/worldinflames_jshint.png"><br>
+For mobile:<br>
+<img src="https://github.com/Lasserini/world-in-flames/blob/main/assets/images/validation/worldinflames_jshint.png">
 
 ## 5. Testing User Stories from User Experience (UX) Section
 - As an owner, I want to show my services and experience to attract more clients.<br>
