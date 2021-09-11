@@ -97,8 +97,8 @@ The website targets people who want to be a part of changing the climate crisis 
 
 ### 2.2 Features left to implement 
 - Add a visual element with a thermometer to replace the Disaster Strikes in x wrong guesses counter.
-- Add a feature that ensures a user doesn't get the same Hidden word again in the current session.
 - Consider is more factual information during the conclusion step is a good idea. Perhaps its ok to keep it light as is.
+- Add more words (& associated endings) to increase replayability.
 
 ## 3. Technologies Used
 

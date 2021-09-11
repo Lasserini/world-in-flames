@@ -34,7 +34,6 @@ Rules & About boxes functionality  | Good | Good | Good | Good | Good | Good | G
 Images | Good | Good | Good | Good | Good | Good | Good
 Renders as expected | Yes | Yes | Yes | Yes | Yes | Yes | Yes
 
-
 ## 3. Browser Compatability
 Browser -> | Chrome | Firefox | Edge | Safari | Opera | IE
 --- | --- | --- | --- | --- | --- | --- |
@@ -85,9 +84,5 @@ For mobile:<br>
 - As a user, I want to experience different endings.<br>
     - The user can either fail or win, which results in two different outcomes.
     - The user can experience six different endings based upon the word they had to guess.
-
-
-
-
 
 ## 5. Known Bugs
