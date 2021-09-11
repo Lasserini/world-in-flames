@@ -8,17 +8,17 @@ The W3C Markup Validator, W3C CSS Validator & JSHint Services were used to valid
 
 ### 1.1 CSS Validation
 The test was succesfull and did not report any issues.<br>
-<img src="add new link"><br>
+<img src="https://github.com/Lasserini/world-in-flames/blob/main/assets/images/validation/worldinfmales_cssvalidation.png"><br>
 The two warnings are shown below, the colors being the same is done on purpose to hide disabled buttons.
-<img src="add new link"><br>
+<img src="https://github.com/Lasserini/world-in-flames/blob/main/assets/images/validation/cssvalidation_warnings.png"><br>
 
 ### 1.2 HTML Validation
 Fixed one minor typo causing an error, afterwards this was the result.<br>
-<img src="add new link">
+<img src="https://github.com/Lasserini/world-in-flames/blob/main/assets/images/validation/worldinfmales_htmlvalidation.png">
 
 ### 1.3 JSHint Validation
 After adding some semicolons, JSHint returns this result<br>
-<img src="add new link">
+<img src="https://github.com/Lasserini/world-in-flames/blob/main/assets/images/validation/worldinflames_jshint.png">
 - The 14 warnings relate to using newer JavaScript stuff. They are mostly warnings about using "let" to declare variables, and then some comments about using a few instances of template literals & arrow function syntax.
 
 ## 2. Responsiveness
@@ -42,28 +42,8 @@ Appearance  | Good | Good | Good | Decent | Good | Good
 Responsiveness | Good | Good | Good | Good | Good | Good
 Functionality | Good | Good | Good | Good | Good | Good
 
-## 4. Contrast Testing
-A test of colour contrast to ensure accessibility.
--   [WebAim Contrast Checkter](https://webaim.org/resources/contrastchecker/)
+## 4. Lighthouse Testing
 
-Black text (#3A3A3A) on white background (#FFFFFF).
-- Passes all tests.
-
-Black text (#252525) on white background (#FFFFFF).
-- Passes all tests.
-
-White text (#FFFFFF) on green background (#0f352d).
-- Passes all tests.
-
-White text (#FFFFFF) in footer on brown background (#35251a).
-- Passes all tests.
-
-Black text (#252525) on grey background (#CCCCCC).
-- Passes all tests.
-
-Green icon and hovor effect (#159D15) on dark green background (#0F352D)
-- Passes tests for Graphical Objects & User Interface Components.
-- It fails the test for normal text & some large text. But the website only utilize the colors together for icons and UI effects.
 
 ## 5. Testing User Stories from User Experience (UX) Section
 - As an owner, I want to show my services and experience to attract more clients.<br>
