@@ -105,3 +105,9 @@ For mobile:<br>
 
 - The site doesn't work well (or at all) in Internet Explorer 11 (& previous versions), as the JavaScript code utilize various things that wasn't supported in the outdated JavaScript versions IE uses.
     - I'm trying to find a way to detect that a user is using IE11, so I can atleast provide an explanation of why the game doesn't work.
+
+- Potential issue with the program in Google Chrome running on a MacOS (MacBook): Found one instance of Google Chrome displaying 3 of the images (stage2, stage5 & sucess_image) as green rectangles rather than the intended image.
+    - I've been unable to replicate the issue on other Macs running Chrome (only tested on 2 other Macs though).
+    - I've been unable to figure out why its those 3 particular images; they are the same image format (jpg) as the other images. There isn't anything obvious that sets their file size or resolution apart from the images that function just fine.
+    - Leaning towards the issue being on the speficic computer, or perhaps an unfortunate combination of MacOS & Chrome versions.
+    - Potential fix if its a wider issue: Replace the images, or alter them to see what works.
