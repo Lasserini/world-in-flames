@@ -75,6 +75,7 @@ function selectSecretWord(){
     setConclusion();
     setAnswerWas();
     hiddenWord();
+    }
 }
 
 // Function to display the secret word in a hidden way, and also to update it during the game
@@ -194,8 +195,6 @@ function reStartGame(){
     selectSecretWord();
     alert(hiddenWords);
 }
-
-
 
 // Function to reset the page
 function resetPage(){
