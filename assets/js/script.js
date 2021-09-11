@@ -18,7 +18,7 @@ function toggleAbout(){
 }
 
 // An array with possible hidden words
-let hidden_words = [
+let hiddenWords = [
     "CONSUMERISM",
     "SHOPPING",
     "REUSEABLE",
@@ -68,7 +68,10 @@ function setAnswerWas(){
 
 // Function to select the secret word to guess
 function selectSecretWord(){
-    secretWord = hidden_words[Math.floor(Math.random() * hidden_words.length)];
+    if (hiddenWords.length == 0){
+        alert ("You've tried all the words this game has to offer. Click the back button to restock the list of words")
+    } else {
+    secretWord = hiddenWords[Math.floor(Math.random() * hiddenWords.length)];
     setConclusion();
     setAnswerWas();
     hiddenWord();
@@ -185,10 +188,14 @@ function reStartGame(){
     document.getElementById("game_area_heading").innerHTML = "Good luck - You can do it!";
     document.getElementById("letters").style.display = "block";
     document.getElementById("conclusion").style.display = "none";
+    hiddenWords.splice(hiddenWords.indexOf(secretWord), 1); // Removes the hidden word from the list before the game is reset.
     usedLetters = [];
     letterButtons();
     selectSecretWord();
+    alert(hiddenWords);
 }
+
+
 
 // Function to reset the page
 function resetPage(){
