@@ -45,75 +45,49 @@ Functionality | Good | Good | Good | Good | Good | Good
 ## 4. Lighthouse Testing
 The first run through suggested adding rel="noopener" tags to the external links. After doing that this was the results. I do have a suspicion that this test only takes the welcome screen into account though.<br>
 For desktop:<br>
-<img src="https://github.com/Lasserini/world-in-flames/blob/main/assets/images/validation/worldinflames_jshint.png"><br>
+<img src="https://github.com/Lasserini/world-in-flames/blob/main/assets/images/validation/lighthouse_result_desktop.png"><br>
 For mobile:<br>
-<img src="https://github.com/Lasserini/world-in-flames/blob/main/assets/images/validation/worldinflames_jshint.png">
+<img src="https://github.com/Lasserini/world-in-flames/blob/main/assets/images/validation/lighthouse_result_mobile.png">
 
 ## 5. Testing User Stories from User Experience (UX) Section
-- As an owner, I want to show my services and experience to attract more clients.<br>
-    - The site provides a detailed overview of all the services the Psychotherapist offers, both in brief form on the welcome page, but also in-depth in pages dedicated to essential topics. 
-    - The site also has an About Me page, that provides further background information. 
-    - Furthermore, the site has contact information posted in a long list of locatins. Intended to provide the end-goal of a potential client picking up the phone and booking a therapy session.
-- As an owner, I want to have an online presence for collegues to refer overflow clients to.<br>
-    - Having a website allows referred clients easy access to my services and credentials.
-    - Having a website gives my business a more professional image.
-- As an owner, I want returning customers to have an easy way of finding me & my contact information<br>
-    - The site has the Psychotherapists name & image at the top left of every page. Creating easy recognition. 
-    - Contact information is clearly visible in many elements across the website, from the welcome page top content box, to the footer on every page, on the pages for individual and couples therapy, and also on a page dedicated to contact information.
-    <br>
-- As a user, I want to easily find the Psychotherapists contact information.<br>
-    - The user will come across the Psychotherapists phonenumber on most pages, and several links leading to the Contact page.
-    - The welcome page has contact information in the topmost box with key information, it also has a content box dedicated to contact information.
-    - The Footer on every page has phone contact information.
-    - The pages for Individual and Couples Therapy has a box with contact information. Providing a call-to-action immediatly if the information about the specific kind of therapy has pursuaded the visiting into booking a session.
-    - The price page has the phone number listed, and also links to the contact page.
-    - The contact page is dedicated to providing contact information, and adds a contact formular that serves as an alternative to the user making a phonecall.
-- As a user, I want to book a therapy session.<br>
-    - The user can find contact information on the welcome page.
-    - If required, the user can easily navigate from the welcome page and onto pages detailing the therapy type thats relevant to them, information about the Psychotherapist or price information.
-- As a user, I want an alternative to having to make a phone call right now.<br>
-    - The welcome page highlights that there is a secondary option in the form of filling out a contact formular.
-    - The contact page has a contact formular that allows the user an alternative to placing a phone call themselves.
-- As a user, I want to know more about the Psychotherapist.<br>
-    - The welcome page has a link to the About Me page.
-    - The user can read about the Psychotherapist on the About Me page.
-    - The user can find information about the Psychotherapists educational background, courses, workshops, supervision and of her past work experiences on the About Me page.
-    - The user can see what therapy issues the Psychotherapist has experience with on both the Individual and the Couples Therapy pages.
-- As a user, I want to know more about Gestalttherapy.<br>
-    - The user can read about the therapy form that is being used on the About Me page.
-- As a user, I want to read about the Individual Therapy sessions.<br>
-    - The user finds a quick introduction to Individual Therapy on the welcome page. This information is supplemented by a link to the Individual Therapy page.
-    - The user can find more in-depth information about the Individual Therapy on the dedicated page.
-- As a user, I want to read about the Couples Therapy sessions.<br>
-    - The user finds a quick introduction to Couples Therapy on the welcome page. This information is supplemented by a link to the Couples Therapy page.
-    - The user can find more in-depth information about the Couples Therapy on the dedicated page.
-- As a user, I want to know if the Psyhotherapist has experience with a specific issue/problem.<br>
-    - The user can see what therapy issues the Psychotherapist has experience with on both the Individual and the Couples Therapy pages.
-- As a user, I want to know about the prices for the services on offer.<br>
-    - The user can find pricing information on the pages dedicated to Individual and Couples Therapy.
-    - The user can find prices on the Price page.
-    - The user can find payment options on the Price page.
-- As a user, I want to find a supervisor.<br>
-    - On the welcome page, the user can see that the Psychotherapist offers Supervision for both individuals and groups.
-    - The user can click the provided link on the welcome page, to go to the Price page where more information is given about Supervision pricing.
-    - As the primary focus of the website is to attact clients for Individual & Couples therapy, further information about Supervision will require a phonecall or filling out the contact formular.
-- As a group, we want to find a group supervisor.<br>
-    - On the welcome page, the user can see that the Psychotherapist offers Supervision for both individuals and groups.
-    - The user can click the provided link on the welcome page, to go to the Price page where users looking for Group Supervision are instructed to place a phone call for more information.
-- As a user, I want to find more information about Mental First Aid courses.<br>
-    - On the welcome page, the user can see that the Psychotherapist offers a Course in Mental First Aid.
-    - The user can click the provided link on the welcome page, to go to the Price page where users looking for information about the Mental First Aid Course are provided with a link to the company that handles bookings and questions about these courses.
-- As a user, I want to know how the Psychotherapist is applying Covid-19 precautions.<br>
-    - On the Price page the user can find information about Covid-19 precautions.
-    - On the Contact page the user can find information about the Covid-19 precautions.
-- As a user, I want to cancel/change an appointment.<br>
-    - The user can find contact information on all pages throughout the site.
-    - The user can find out how to cancel or change an appointment on the price and contact pages.
-    - The user can find the conditions that apply to canceling or changing a booking on the price and contact pages.
+- As an owner, I want to make the user think about the climate crisis.<br>
+    - The welcome screen features a hero image and an intro text that draws the user into the theme.
+    - The about section has a link to a site where the user can explore further information & calculate their own climate footprint.
+- As an owner, I want to provide the user with ideas for making small changes to help lower their climate footprint.<br>
+    - The ending features suggestions/ideas on what behaviour might be worth looking at. The topic of suggestions is tied to the word the user just tried to guess, connecting the gameplay to the underlying purpose. 
+    - The about section has a link to a site where the user can calculate their own climate footprint.
+- As an owner, I want to provide an easily understandable game experience.<br>
+    - The welcome screen features a rules button that explains the rules, and an about button with further information about the game and its theme.
+    - The gameplay screen boils the rules down to a single line & an intuitive setup that is hopefully simple to grasp and get started with.
+    - The user has a Play Again button available, if they wish to test stuff abit before they start playing proper.
+- As a user, I want to know how the game works.<br>
+    - On the welcome screen the user finds the rules button, when clicked the user is presented with a box that explains the rules of the game.
+    - On the gameplay screen the user reads "Guess the hidden word before it's too late!" and is presented with a hidden work & letters to press.
+- As a user, I want to know more about the idea behind the game.<br>
+    -  On the welcome screen the user finds the about button, when clicked the user is presented with a box that explains abit about the thematic ideas behind the game.
+- As a user, I want to jump straight into the gameplay action.<br>
+    - On the Welcome screen the user pressed the large button with a call to action written upon it, and the game begins.
+- As a user, I want a background story to get me excited about playing a game.<br>
+    - On the Welcome Page the user is presented with a flavourfull intro text.
+    - When the game fails/succeds the user is presented with a conclusion depending on how wel they did, and on what word was chosen as the hidden one.
+- As a user, I want a visual experience that enchances the gameplay experience.<br>
+    - On the Welcome Page a hero image draws the user in.
+    - During gameplay (& at the consequence step), the images of the glove evolve in response to how well the user is doing.
+- As a user, I want to restart my game before it ends.<br>
+    - On the gameplay screen the user can press the Play Again button to immediatly restart the game.
+- As a user, I want to return to the index page to read the rules again.<br>
+    - On the gameplay screen the user can press the Back button to return to the welcome page.
+- As a user, I want to play one more time.<br>
+    - Upon reading the conclusion the user can press the Play Again button to restart the game.
+- As a user, I want to learn about small steps I can take to combat climate change.<br>
+    - In the about box the user can press the link to an external site and calculate the climate footprint.
+    - During the conclusion of the game, the user is presented with small tips regarding the topic under which the chosen word to guess fall under.
+- As a user, I want to experience different endings.<br>
+    - The user can either fail or win, which results in two different outcomes.
+    - The user can experience six different endings based upon the word they had to guess.
+
+
+
 
 
 ## 5. Known Bugs
-- On devices with a viewport height below 600px there was an issue with the dropdown navigation menu. The menu was locked in place & didn't scale, which caused an issue on the very smallest of phones. Bugfix: Applied a change that makes the menu list items scale with viewport height.
-- There was a validation issue on the about me page. The problem was identified as headings being used inside a paragraph. Bugfix: A restructuring of the content box fixed the issue.
-- The Contact Formular isn't working yet. The backend required will be added in a future update.
-- The navigation menu was too large for midsize screens (i.e. 800px to 970px), using the small nav bar at such a large screensize felt off. So instead a solution with reduced font-size at that range of screens is applied.
