@@ -86,3 +86,18 @@ For mobile:<br>
     - The user can experience six different endings based upon the word they had to guess.
 
 ## 5. Known Bugs
+- The link to my Github Repository wasn't displaying properly on the deployed site.<br>
+    - Removed the copyright symbol, seems to have fixed the issue.
+
+- Struggled with finding an elegant solution to resetting the disabled Letters upon a game restart.<br>
+    - Found a methon for creating the letter buttons with JavaScript, which also enabled using some fun backtic action.
+
+- After adding a function to remove previously used words, the game could run out of words, leading to unintended behaviour.
+    - Added an if clause to a function to alert the user that a click on the back button is required. This also doubles as a way of informing the user that they have seen all there is too see.
+    - An alternative would be to have the if clause refill the array with hiddenWords, but that wouldn't give the user a clear indication that all content has been used. I suppose it could, but would be less elegant I think.
+
+- For the longest time the actual game wasn't working.<br>
+    - After some research I found a way to restructure some of the logic behind it, adding a second version of the hidden word to have one to alter during gameplay was essential.
+
+- The background colours on the images aren't all as black as I would like them to be.<br>
+    - Decided that I didn't want to alter too much to images I credit to others, and that the issue wasn't the most essential think to spend time working on.
