@@ -54,7 +54,7 @@ function setConclusion(){
     } else if (secretWord == "TRANSPORTATION" || secretWord == "COMMUTE"){
         document.getElementById("conclusion").innerHTML = "Consider public transportation or get on your bike if the distance is manageable. Long term you could consider ways of reducing the distance you need to commute.";
     } else if (secretWord == "AUTOMOBILE" || secretWord == "DIESEL" || secretWord == "PETROL"){
-        document.getElementById("conclusion").innerHTML = "Use public transportation if available, get on that bike. If you are deeply reliant on a car, then changing to an electric vehicle will decrease your footprint";
+        document.getElementById("conclusion").innerHTML = "Use public transportation if available. Get on that bike. If you are deeply reliant on a car, then changing to an electric vehicle will decrease your footprint";
     } else if (secretWord == "AIRPLANES" || secretWord =="FLYING" || secretWord =="HOLIDAY"){
         document.getElementById("conclusion").innerHTML = "Fly less, if at all. Just one short return trip is more than double the emissions an average person can produce yearly if we want to sustain an habitable planet. It sucks, I know!";
     } else {
