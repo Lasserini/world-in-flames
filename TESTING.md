@@ -8,14 +8,16 @@ The W3C Markup Validator, W3C CSS Validator & JSHint Services were used to valid
 
 ### 1.1 CSS Validation
 The test was succesfull and did not report any issues.<br>
-<img src="add new link">
+<img src="add new link"><br>
+The two warnings are shown below, the colors being the same is done on purpose to hide disabled buttons.
+<img src="add new link"><br>
 
 ### 1.2 HTML Validation
-How did it go?
+Fixed one minor typo causing an error, afterwards this was the result.<br>
 <img src="add new link">
 
 ### 1.3 JSHint Validation
-After adding some semicolons, JSHint returns this result:
+After adding some semicolons, JSHint returns this result<br>
 <img src="add new link">
 - The 14 warnings relate to using newer JavaScript stuff. They are mostly warnings about using "let" to declare variables, and then some comments about using a few instances of template literals & arrow function syntax.
 
