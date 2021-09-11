@@ -27,18 +27,18 @@ To test responsiveness across various devices & screensizes, I used [Responsive 
 
 Viewport | iPhone 5/5s<br>320x568 | Galaxy S5/S6/S/<br>360*640 | OnePlus 6T<br>412x892 | Ipad Mini<br>768x1012 | Ipad Pro<br>1366x1024 | Desktop 1024px | Desktop 1440px
 --- | --- | --- | --- | --- | --- | --- | --- |
-Site responsiveness<br>above 850px width  | n/a | n/a| n/a | n/a | ? | ? | ?
-Site responsiveness<br>between 450px & 850px width | n/a | n/a | n/a | ? | n/a | n/a | n/a
-Site responsiveness<br>below 450px width | ? | ? | ? | n/a | n/a | n/a | n/a
+Site responsiveness<br>above 850px width  | n/a | n/a| n/a | n/a | Good | Good | Good
+Site responsiveness<br>between 450px & 850px width | n/a | n/a | n/a | Image position issues | n/a | n/a | n/a
+Site responsiveness<br>below 450px width | Good | Good | Good | n/a | n/a | n/a | n/a
 Button functionality  | Good | Good | Good | Good | Good | Good | Good
 Rules & About boxes functionality  | Good | Good | Good | Good | Good | Good | Good
-Images | Good | Good | Good | Good | Good | Good | Good
-Renders as expected | Yes | Yes | Yes | Yes | Yes | Yes | Yes
+Images | Good | Good | Good | Mixed | Good | Good | Good
+Renders as expected | Yes | Yes | Yes | Most of it | Yes | Yes | Yes
 
 ## 3. Browser Compatability
 Browser -> | Chrome | Firefox | Edge | Safari | Opera | IE-11
 --- | --- | --- | --- | --- | --- | --- |
-Appearance  | Good | Good | Good | Troubled | Good | Good
+Appearance  | Good | Good | Good | Good | Good | Good
 Responsiveness | Good | Good | Good | Good | Good | Good
 Functionality | Good | Good | Good | Good | Good | Doesn't work
 
@@ -105,6 +105,3 @@ For mobile:<br>
 
 - The site doesn't work well (or at all) in Internet Explorer 11 (& previous versions), as the JavaScript code utilize various things that wasn't supported in the outdated JavaScript versions IE uses.
     - I'm trying to find a way to detect that a user is using IE11, so I can atleast provide an explanation of why the game doesn't work.
-
-- Safari doesn't load 3 of the images, instead showing a green square.
-    - Time to get to work.
